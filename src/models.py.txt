@@ -1,0 +1,18 @@
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, f1_score
+
+def get_classifier(model_name='knn', **params):
+    if model_name.lower() == 'knn':
+        return KNeighborsClassifier(n_neighbors=params.get('n_neighbors', 5), metric='euclidean')
+    elif model_name.lower() == 'tree':
+        return DecisionTreeClassifier(max_depth=params.get('max_depth', 3), random_state=params.get('random_state', 42))
+    elif model_name.lower() == 'nb':
+        return GaussianNB()
+    raise ValueError(f"Unknown model: {model_name}")
+
+def evaluate_predictions(y_true, y_pred, average='macro'):
+    acc = accuracy_score(y_true, y_pred)
+    f1 = f1_score(y_true, y_pred, average=average)
+    return {'accuracy': acc, 'f1_score': f1}

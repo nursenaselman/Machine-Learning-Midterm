@@ -1,0 +1,13 @@
+# AI Use Disclosure Statement
+
+**Course:** Machine Learning Midterm Project  
+**Author:** Nursena Selman  
+**Student ID:** 23040202004  
+**Department:** Department of Electrical and Electronics Engineering  
+**Institution:** Istanbul Topkapi University  
+
+## Scope of AI Assistance
+Generative AI tools (Large Language Models) were utilized strictly for structural guidance, code layout formatting, and linguistic proofreading/refinement of documentation.
+
+## Independent Student Work
+All core analytical logic, pipeline architecture, experimental design, hyperparameter exploration strategies, data leakage elimination protocols, metric interpretations, and live model verifications were formulated, executed, evaluated, and validated independently by the author.

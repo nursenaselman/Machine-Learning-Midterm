@@ -1,0 +1,5 @@
+dataset,representation,k,test_ari,test_silhouette
+wine,scaled,3,0.9088,0.2711
+wine,unscaled,3,0.3654,0.562
+breast_cancer,scaled,2,0.7354,0.3251
+breast_cancer,unscaled,2,0.482,0.684
